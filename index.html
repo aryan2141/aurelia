@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurelia | Restaurant & Fine Dining</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <header class="header header-light">
+        <div class="d-flex align-items-center justify-content-between gap-4">
+            <button id="nav_toggler" class="btn btn-nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a href="/" class="logo">Aurelia</a>
+            <a href="/" class="btn btn-header btn-rotate d-none d-sm-inline-block">
+                <span class="btn-txt">
+                    <span class="shown-btn-txt">
+                        Reserve Table
+                    </span>
+                    <span class="hidden-btn-txt">
+                        Reserve Table
+                    </span>
+                </span>
+            </a>
+        </div>
+
+        <nav id="navbar" class="navbar">
+            <ul class="navbar-nav w-100">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">
+                        Our Story
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/" class="nav-link">
+                        Food Menu
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/" class="nav-link">
+                        Reservation
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/" class="nav-link">
+                        Contact
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </li>
+                <li class="d-sm-none">
+                    <a href="/" class="btn btn-header btn-rotate mt-3">
+                        <span class="btn-txt">
+                            <span class="shown-btn-txt">
+                                Reserve Table
+                            </span>
+                            <span class="hidden-btn-txt">
+                                Reserve Table
+                            </span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section hero" data-header="light">
+        <div class="container">
+            <div class="row position-relative z-2">
+                <div class="col-12 col-md-10 col-lg-7 col-xl-7 col-xxl-6">
+                    <h1 class="hero-title">Fresh Food. <br> <span>Zero Wait.</span></h1>
+                    <p class="hero-desc">Aurelia brings freshly prepared, premium meals from our kitchen straight to
+                        your table wherever you are.</p>
+
+                    <a href="/" class="btn btn-banner btn-rotate">
+                        <span class="btn-txt">
+                            <span class="shown-btn-txt">
+                                Order Delivery Now
+                            </span>
+                            <span class="hidden-btn-txt">
+                                Order Delivery Now
+                            </span>
+                        </span>
+                    </a>
+
+                    <ul class="banner-points">
+                        <li class="rating">
+                            <span class="rating-star-wrapper">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                            <span class="tag-txt">4.9 (2,859 reviews)</span>
+                        </li>
+                        <li>
+                            <span class="separator"></span>
+                        </li>
+                        <li class="delivery-tag">
+                            <i class="bi bi-truck"></i>
+                            <span class="tag-txt">Free delivery over $20</span>
+                        </li>
+                        <li>
+                            <span class="separator"></span>
+                        </li>
+                        <li class="hour-tag">
+                            <i class="bi bi-clock"></i>
+                            <span class="tag-txt">Open till 2 AM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <img src="./assets/img/hero-thumb.png" alt="Hero Thumb" class="hero-thumb">
+        </div>
+    </section>
+
+    <section class="section about" data-header="dark">
+        <div class="container position-relative">
+            <img src="./assets/img/leaf.png" class="leaf-icon about-leaf-left" alt="">
+            <h5 class="about-txt">Aurelia Was Born From A Simple Belief: You Shouldn't Have To Choose Between A Premium
+                Dining Experience And The Convenience Of Home Delivery.</h5>
+            <img src="./assets/img/leaf.png" class="leaf-icon about-leaf-right" alt="">
+        </div>
+    </section>
+
+    <section class="section category" data-header="dark">
+        <div class="container">
+            <div class="section-header text-center">
+                <h5 class="section-title-sm">Food Category</h5>
+                <h2 class="section-title">Our Signature Dishes</h2>
+            </div>
+        </div>
+        <div class="swiper category-swiper category-item-wrapper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="category-item w-100">
+                        <img src="./assets/img/dish1.png" class="category-thumb" alt="">
+                        <h5 class="category-title">Rice with Vegetable</h5>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="category-item w-100">
+                        <img src="./assets/img/dish2.png" class="category-thumb" alt="">
+                        <h5 class="category-title">Garden Fresh Pizza</h5>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="category-item w-100">
+                        <img src="./assets/img/dish3.png" class="category-thumb" alt="">
+                        <h5 class="category-title">Onion Burger</h5>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="category-item w-100">
+                        <img src="./assets/img/dish4.png" class="category-thumb" alt="">
+                        <h5 class="category-title">Mix Vegetable</h5>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="category-item w-100">
+                        <img src="./assets/img/dish1.png" class="category-thumb" alt="">
+                        <h5 class="category-title">Rice with Vegetable</h5>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="category-item w-100">
+                        <img src="./assets/img/dish2.png" class="category-thumb" alt="">
+                        <h5 class="category-title">Garden Fresh Pizza</h5>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="category-item w-100">
+                        <img src="./assets/img/dish3.png" class="category-thumb" alt="">
+                        <h5 class="category-title">Onion Burger</h5>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="category-item w-100">
+                        <img src="./assets/img/dish4.png" class="category-thumb" alt="">
+                        <h5 class="category-title">Mix Vegetable</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section menu" data-header="light">
+        <div class="container">
+            <div class="section-header d-flex flex-row align-items-end justify-content-between gap-3 flex-wrap">
+                <div>
+                    <h5 class="section-title-sm">Our Menu</h5>
+                    <h2 class="section-title">Customer Favorites <br> <span>You’ll Love</span></h2>
+                </div>
+
+                <a href="/" class="btn btn-gray btn-rotate">
+                    <span class="btn-txt">
+                        <span class="shown-btn-txt">
+                            Explore Full Menu
+                        </span>
+                        <span class="hidden-btn-txt">
+                            Explore Full Menu
+                        </span>
+                    </span>
+                </a>
+            </div>
+
+            <div class="row menu-item-wrapper">
+                <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="menu-item">
+                        <div class="menu-thumb-wrapper">
+                            <img src="./assets/img/dish1.png" class="menu-thumb" alt="">
+                        </div>
+                        <h5 class="menu-title">Rice with Vegetable</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="menu-item">
+                        <div class="menu-thumb-wrapper">
+                            <img src="./assets/img/dish2.png" class="menu-thumb" alt="">
+                        </div>
+                        <h5 class="menu-title">Garden Fresh Pizza</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="menu-item">
+                        <div class="menu-thumb-wrapper">
+                            <img src="./assets/img/dish3.png" class="menu-thumb" alt="">
+                        </div>
+                        <h5 class="menu-title">Onion Burger</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="menu-item">
+                        <div class="menu-thumb-wrapper">
+                            <img src="./assets/img/dish4.png" class="menu-thumb" alt="">
+                        </div>
+                        <h5 class="menu-title">Mix Vegetable</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="menu-item">
+                        <div class="menu-thumb-wrapper">
+                            <img src="./assets/img/dish6.png" class="menu-thumb" alt="">
+                        </div>
+                        <h5 class="menu-title">Golden Veggie Bites</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+                    <div class="menu-item">
+                        <div class="menu-thumb-wrapper">
+                            <img src="./assets/img/dish7.png" class="menu-thumb" alt="">
+                        </div>
+                        <h5 class="menu-title">Paneer Masala</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section work" data-header="dark">
+        <div class="container">
+            <div class="row align-items-start position-relative">
+                <div class="col-lg-6 mb-4 mb-lg-0 work-sticky-content">
+                    <div class="section-header mb-0">
+                        <h5 class="section-title-sm">How we work</h5>
+                        <h2 class="section-title">Choose Your Vibe</h2>
+                        <p class="section-desc">Same kitchen, same talented chef, but a whole new range of unique and
+                            exciting
+                            experiences to enjoy.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="work-item mb-4">
+                        <div class="work-item-header">
+                            <div class="work-item-thumb">
+                                <i class="bi bi-truck"></i>
+                            </div>
+                            <h5 class="work-item-title">Order Delivery</h5>
+                            <p class="work-item-desc">Fresh from our kitchen to your door in 30 minutes</p>
+                        </div>
+                        <ul class="work-item-point-wrapper">
+                            <li class="work-item-point mb-1">Free delivery over $150</li>
+                            <li class="work-item-point mb-1">Real-time tracking</li>
+                            <li class="work-item-point">Open till 2 AM</li>
+                        </ul>
+                        <a href="/" class="btn btn-work btn-rotate">
+                            <span class="btn-txt">
+                                <span class="shown-btn-txt">
+                                    Order Delivery Now
+                                </span>
+                                <span class="hidden-btn-txt">
+                                    Order Delivery Now
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="work-item mb-4">
+                        <div class="work-item-header">
+                            <div class="work-item-thumb">
+                                <i class="bi bi-shop"></i>
+                            </div>
+                            <h5 class="work-item-title">Dine-In Experience</h5>
+                            <p class="work-item-desc">Enjoy our modern space with neon vibes and music</p>
+                        </div>
+                        <ul class="work-item-point-wrapper">
+                            <li class="work-item-point mb-1">Reserve your table</li>
+                            <li class="work-item-point mb-1">Full bar menu</li>
+                            <li class="work-item-point">Perfect for dates</li>
+                        </ul>
+                        <a href="/" class="btn btn-work btn-rotate">
+                            <span class="btn-txt">
+                                <span class="shown-btn-txt">
+                                    Reserve Table
+                                </span>
+                                <span class="hidden-btn-txt">
+                                    Reserve Table
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="work-item">
+                        <div class="work-item-header">
+                            <div class="work-item-thumb">
+                                <i class="bi bi-handbag"></i>
+                            </div>
+                            <h5 class="work-item-title">Quick Takeaway</h5>
+                            <p class="work-item-desc">Order ahead and pick up when ready</p>
+                        </div>
+                        <ul class="work-item-point-wrapper">
+                            <li class="work-item-point mb-1">No delivery fee</li>
+                            <li class="work-item-point mb-1">Skip the queue</li>
+                            <li class="work-item-point">Ready in 15 mins</li>
+                        </ul>
+                        <a href="/" class="btn btn-work btn-rotate">
+                            <span class="btn-txt">
+                                <span class="shown-btn-txt">
+                                    Order Takeaway
+                                </span>
+                                <span class="hidden-btn-txt">
+                                    Order Takeaway
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonial" data-header="dark">
+        <div class="container">
+            <div class="section-header text-center">
+                <h5 class="section-title-sm">Testimonial</h5>
+                <h2 class="section-title">Honest Feedback From <br> Valued Customers</h2>
+            </div>
+        </div>
+
+        <div class="swiper testimonial-swiper testimonial-item-wrapper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <span class="rating-star-wrapper">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <p class="testimonial-desc">
+                            Amazing taste, fast delivery, and great presentation always impressed us beyond expectations
+                            every
+                            single time we ordered.
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="./assets/img/testimonial1.png" alt="" width="48px">
+                            <div>
+                                <h5 class="testimonial-author">Rohan Mehta</h5>
+                                <p class="testimonial-role">Food Enthusiast</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <span class="rating-star-wrapper">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <p class="testimonial-desc">
+                            “Their professionalism, attention to detail, and commitment to delivering high-quality foods
+                            have
+                            exceeded our expectations 1
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="./assets/img/testimonial2.png" alt="" width="48px">
+                            <div>
+                                <h5 class="testimonial-author">Priya Sharma</h5>
+                                <p class="testimonial-role">Regular Guest</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <span class="rating-star-wrapper">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <p class="testimonial-desc">
+                            Consistent quality, professional staff, and delicious meals made them our
+                            most trusted and favorite restaurant choice always.
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="./assets/img/testimonial3.png" alt="" width="48px">
+                            <div>
+                                <h5 class="testimonial-author">Arjun Patel</h5>
+                                <p class="testimonial-role">Restaurant Reviewer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <span class="rating-star-wrapper">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <p class="testimonial-desc">
+                            Amazing taste, fast delivery, and great presentation always impressed us beyond expectations
+                            every
+                            single time we ordered.
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="./assets/img/testimonial1.png" alt="" width="48px">
+                            <div>
+                                <h5 class="testimonial-author">Rohan Mehta</h5>
+                                <p class="testimonial-role">Food Enthusiast</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <span class="rating-star-wrapper">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <p class="testimonial-desc">
+                            “Their professionalism, attention to detail, and commitment to delivering high-quality foods
+                            have
+                            exceeded our expectations 1
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="./assets/img/testimonial2.png" alt="" width="48px">
+                            <div>
+                                <h5 class="testimonial-author">Priya Sharma</h5>
+                                <p class="testimonial-role">Regular Guest</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <span class="rating-star-wrapper">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <p class="testimonial-desc">
+                            Consistent quality, professional staff, and delicious meals made them our
+                            most trusted and favorite restaurant choice always.
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="./assets/img/testimonial3.png" alt="" width="48px">
+                            <div>
+                                <h5 class="testimonial-author">Arjun Patel</h5>
+                                <p class="testimonial-role">Restaurant Reviewer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <span class="rating-star-wrapper">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <p class="testimonial-desc">
+                            Amazing taste, fast delivery, and great presentation always impressed us beyond expectations
+                            every
+                            single time we ordered.
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="./assets/img/testimonial1.png" alt="" width="48px">
+                            <div>
+                                <h5 class="testimonial-author">Rohan Mehta</h5>
+                                <p class="testimonial-role">Food Enthusiast</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <span class="rating-star-wrapper">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <p class="testimonial-desc">
+                            “Their professionalism, attention to detail, and commitment to delivering high-quality foods
+                            have
+                            exceeded our expectations 1
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="./assets/img/testimonial2.png" alt="" width="48px">
+                            <div>
+                                <h5 class="testimonial-author">Priya Sharma</h5>
+                                <p class="testimonial-role">Regular Guest</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-item">
+                        <span class="rating-star-wrapper">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <p class="testimonial-desc">
+                            Consistent quality, professional staff, and delicious meals made them our
+                            most trusted and favorite restaurant choice always.
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="./assets/img/testimonial3.png" alt="" width="48px">
+                            <div>
+                                <h5 class="testimonial-author">Arjun Patel</h5>
+                                <p class="testimonial-role">Restaurant Reviewer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="testimonial-swiper-pagination"></div> -->
+        </div>
+    </section>
+
+    <section class="section gallery" data-header="dark">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Kitchen Gallery</h2>
+            </div>
+        </div>
+
+        <div class="swiper gallery-swiper gallery-item-wrapper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="gallery-item gallery-item-lg">
+                        <img src="./assets/img/gallery3.png" alt="" class="gallery-thumb">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-item gallery-item-sm">
+                        <img src="./assets/img/gallery2.png" alt="" class="gallery-thumb">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-item gallery-item-lg">
+                        <img src="./assets/img/gallery3.png" alt="" class="gallery-thumb">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-item gallery-item-lg">
+                        <img src="./assets/img/gallery4.png" alt="" class="gallery-thumb">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-item gallery-item-sm">
+                        <img src="./assets/img/gallery5.png" alt="" class="gallery-thumb">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-item gallery-item-lg">
+                        <img src="./assets/img/gallery3.png" alt="" class="gallery-thumb">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-item gallery-item-sm">
+                        <img src="./assets/img/gallery2.png" alt="" class="gallery-thumb">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-item gallery-item-lg">
+                        <img src="./assets/img/gallery3.png" alt="" class="gallery-thumb">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-item gallery-item-lg">
+                        <img src="./assets/img/gallery4.png" alt="" class="gallery-thumb">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="gallery-item gallery-item-sm">
+                        <img src="./assets/img/gallery5.png" alt="" class="gallery-thumb">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="order-content text-center">
+                <p class="order-content-desc">We started with a food truck and a dream: to bring real, unapologetic
+                    flavor to burger
+                    lovers. No
+                    shortcuts, no compromises just good food, great vibes, and even better company
+                </p>
+                <a href="/" class="btn btn-gray btn-rotate">
+                    <span class="btn-txt">
+                        <span class="shown-btn-txt">
+                            Order Delivery Now
+                        </span>
+                        <span class="hidden-btn-txt">
+                            Order Delivery Now
+                        </span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="secton faq" data-header="dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="section-header mb-0">
+                        <h5 class="section-title-sm">Question & Answer</h5>
+                        <h2 class="section-title">You’ve Got Any Questions? </h2>
+                        <img src="./assets/img/gallery4.png" alt="" class="faq-thumb">
+                        <p class="section-desc">Still not sure? If your question isn’t answered here or you just want to
+                            talk it through we’d love to hear from you.</p>
+                        <a href="/" class="btn btn-gray btn-rotate">
+                            <span class="btn-txt">
+                                <span class="shown-btn-txt">
+                                    Know More ?
+                                </span>
+                                <span class="hidden-btn-txt">
+                                    Know More ?
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="accordion accordion-flush accordion-faq" id="accordionFaq">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    How does ordering work?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFaq">
+                                <div class="accordion-body">
+                                    <p class="accordion-desc">
+                                        Customers browse menu, select items, customize options, add to cart, choose
+                                        delivery or pickup, confirm details, and complete payment to place their order.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Is there a minimum order value?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFaq">
+                                <div class="accordion-body">
+                                    <p class="accordion-desc">
+                                        Yes, a minimum order value applies to ensure efficient preparation and delivery.
+                                        The required amount will be displayed clearly before completing checkout.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    What payment methods do you accept?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFaq">
+                                <div class="accordion-body">
+                                    <p class="accordion-desc">
+                                        We accept cash on delivery, credit/debit cards, and mobile payments. All
+                                        transactions are securely processed.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    What if an item is missing or incorrect?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFaq">
+                                <div class="accordion-body">
+                                    <p class="accordion-desc">
+                                        If your order arrives missing items or incorrect, contact us immediately. Our
+                                        team will quickly arrange a replacement, correction, or suitable refund.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                    aria-controls="flush-collapseFive">
+                                    Where do you deliver?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFaq">
+                                <div class="accordion-body">
+                                    <p class="accordion-desc">
+                                        We deliver within selected service areas based on distance and availability.
+                                        Enter your address at checkout to confirm delivery coverage.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                    aria-controls="flush-collapseSix">
+                                    Do you offer discounts or promo codes?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFaq">
+                                <div class="accordion-body">
+                                    <p class="accordion-desc">
+                                        Yes, we regularly provide discounts and promo codes through our website and
+                                        campaigns. Apply a valid code at checkout to enjoy savings.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" data-header="light">
+        <div class="container position-relative z-2">
+            <div class="section-header text-center">
+                <h2 class="section-title">Your Next Favorite Meal Is Just <span>One Click</span> Away</h2>
+                <p class="section-desc">
+                    Skip the wait and enjoy freshly prepared meals delivered straight from our kitchen to your doorstep.
+                </p>
+            </div>
+
+            <div class="footer-delivery-content-wrapper">
+                <div class="footer-delivery-content">
+                    <div class="footer-delivery-thumb">
+                        <i class="bi bi-truck"></i>
+                    </div>
+                    <div>
+                        <p class="footer-delivery-label">Average delivery time</p>
+                        <h5 class="footer-delivery-time">30 Minutes</h5>
+                    </div>
+                </div>
+
+                <a href="/" class="btn btn-light btn-rotate">
+                    <span class="btn-txt">
+                        <span class="shown-btn-txt">
+                            Order Delivery Now
+                        </span>
+                        <span class="hidden-btn-txt">
+                            Order Delivery Now
+                        </span>
+                    </span>
+                </a>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h5 class="footer-logo">Aurelia</h5>
+
+                    <div class="d-flex flex-wrap">
+                        <div class="footer-link-wrapper">
+                            <h5 class="footer-link-title">Quick Links</h5>
+                            <a href="/" class="footer-link">Our Story</a>
+                            <a href="/" class="footer-link">Food Menu</a>
+                            <a href="/" class="footer-link">Contact Us</a>
+                            <a href="/" class="footer-link">Home</a>
+                        </div>
+
+                        <div class="footer-link-wrapper">
+                            <h5 class="footer-link-title">Other Links</h5>
+                            <a href="/" class="footer-link">Order Online</a>
+                            <a href="/" class="footer-link">Reserve Table</a>
+                            <a href="/" class="footer-link">Privacy Policy</a>
+                            <a href="/" class="footer-link">Terms of Service</a>
+                        </div>
+
+                        <div class="footer-link-wrapper footer-social-link-wrapper">
+                            <h5 class="footer-link-title">Follow us</h5>
+                            <div class="social-links-wrapper">
+                                <a href="/" class="footer-link">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="/" class="footer-link">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="/" class="footer-link">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                                <a href="/" class="footer-link">
+                                    <i class="bi bi-twitter-x"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="copyright-txt">&copy; This site is created for demo purpose.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="footer-rating-wrapper">
+                        <div class="footer-rating-content">
+                            <div class="footer-rating">
+                                <span class="rating-star-wrapper mb-0">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </span>
+                                <span class="rating-tag">500+ Reviews</span>
+                            </div>
+                            <h5 class="rating-title">Loved By Thousands</h5>
+                            <p class="rating-desc">
+                                Our kitchen brings together authentic taste <br class="d-none d-sm-block"> and modern
+                                flavor to satisfy
+                                every craving.
+                            </p>
+                        </div>
+                        <img src="./assets/img/footer-thumb.png" class="footer-thumb" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-4.0.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.1"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

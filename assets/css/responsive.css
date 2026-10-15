@@ -1,0 +1,251 @@
+@media screen and (max-width: 1199px) {
+    /* Hero */
+    .hero .hero-thumb{
+        width: 60%;
+    }
+
+    /* Footer */
+    .footer .footer-link-wrapper {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .section-title,
+    .section-title span {
+        font-size: 48px;
+    }
+
+    .btn {
+        padding: 16px 20px;
+        width: 195px;
+    }
+
+    /* Header */
+    .header .btn-nav-toggle {
+        width: 54px;
+        height: 54px;
+    }
+
+    .header .btn-nav-toggle span {
+        width: 20px;
+    }
+
+    .header .logo {
+        font-size: 28px;
+    }
+
+    .header .navbar{
+        top: 5.5rem;
+    }
+
+    /* Hero */
+    .hero {
+        padding-top: 120px;
+    }
+
+    .hero .hero-title {
+        font-size: 75px;
+    }
+
+    .hero .hero-thumb{
+        width: 70%;
+    }
+
+    /* About */
+    .about {
+        padding: 120px 0;
+    }
+
+    .about .leaf-icon {
+        width: 85px;
+    }
+
+    .about .about-leaf-left {
+        left: -8%;
+    }
+
+    .about .about-leaf-right {
+        bottom: -8%;
+        right: -8%;
+    }
+
+    .about .about-txt {
+        font-size: 48px;
+    }
+
+    /* Menu */
+    .menu .menu-item .menu-thumb-wrapper {
+        margin-bottom: 24px;
+    }
+
+    .menu .menu-item .menu-title {
+        font-size: 28px;
+    }
+
+    /* Footer */
+    .footer .footer-delivery-content-wrapper {
+        margin-bottom: 60px;
+    }
+
+    .footer .footer-logo {
+        font-size: 75px;
+        margin-bottom: 50px;
+    }
+
+    .footer .footer-link-wrapper {
+        margin-bottom: 55px;
+    }
+
+    .footer .footer-rating-wrapper {
+        height: 450px;
+    }
+
+    .footer .footer-rating-content .footer-rating {
+        margin-bottom: 12px;
+    }
+
+    .footer .footer-rating-content .footer-rating i {
+        font-size: 22px;
+    }
+
+    .footer .footer-rating-wrapper .rating-title {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-title,
+    .section-title span {
+        font-size: 42px;
+    }
+
+    /* Header */
+    .header{
+        top: 55px;
+    }
+
+    .header .navbar{
+        padding: 18px 22px;
+    }
+
+    /* Hero */
+    .hero {
+        padding-top: 150px;
+        padding-bottom: 0;
+    }
+
+    .hero .hero-title {
+        font-size: 58px;
+        margin-bottom: 16px;
+    }
+
+    .hero .hero-desc {
+        font-size: 18px;
+        margin-bottom: 34px;
+    }
+
+    .hero .hero-thumb {
+        position: relative;
+        inset: auto;
+        width: 100%;
+        z-index: 2;
+    }
+
+    /* About */
+    .about {
+        padding: 100px 0;
+    }
+
+    .about .about-txt {
+        font-size: 35px;
+    }
+
+    .about .leaf-icon {
+        width: 60px;
+    }
+
+    .about .about-leaf-left {
+        top: 50px;
+        left: -6%;
+    }
+
+    .about .about-leaf-right {
+        right: -6%;
+    }
+
+    /* Menu */
+    .menu .menu-item .menu-title {
+        font-size: 24px;
+    }
+
+    /* Work */
+
+    .work .work-item .work-item-header {
+        margin-bottom: 22px;
+    }
+
+    .work .work-item .work-item-header .work-item-thumb {
+        width: 58px;
+        height: 58px;
+    }
+
+    .work .work-item .work-item-header .work-item-thumb i {
+        font-size: 26px;
+    }
+
+    .work .work-item .work-item-header .work-item-title {
+        font-size: 26px;
+    }
+
+    .work .work-item .work-item-header .work-item-desc {
+        font-size: 16px;
+    }
+
+    /* Footer */
+
+    .footer .footer-delivery-content-wrapper {
+        padding: 20px;
+    }
+
+    .footer-delivery-content-wrapper .btn {
+        width: 100%;
+    }
+
+    .footer .footer-logo {
+        font-size: 54px;
+        margin-bottom: 42px;
+    }
+
+    .footer .footer-link-wrapper {
+        width: 50%;
+        min-width: 160px;
+        margin-bottom: 42px;
+    }
+
+    .footer .footer-social-link-wrapper {
+        min-width: 220px;
+    }
+
+    .footer .footer-rating-wrapper {
+        height: 410px;
+    }
+
+    .footer .footer-rating-content {
+        padding: 30px 30px 0 30px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    /* Header */
+    .header {
+        padding-right: 16px;
+    }
+}
